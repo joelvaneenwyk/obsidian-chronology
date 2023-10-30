@@ -1,17 +1,19 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "./src",
+    "rootDir": "./src",
     "inlineSourceMap": true,
     "inlineSources": true,
     "module": "ESNext",
     "target": "ES6",
+    "strict": true,
     "allowJs": true,
     "noImplicitAny": true,
     "moduleResolution": "node",
     "importHelpers": true,
     "isolatedModules": true,
-	"strictNullChecks": true,
-	// "esModuleInterop": true,
+    "strictNullChecks": true,
+    // "esModuleInterop": true,
     // "allowSyntheticDefaultImports": true,
     "lib": [
       "DOM",
@@ -19,9 +21,10 @@
       "ES6",
       "ES7"
     ],
-	"jsx": "react"
+    "jsx": "react"
   },
   "include": [
-    "**/*.ts"
+    "**/*.ts",
+    "**/*.tsx"
   ]
 }
