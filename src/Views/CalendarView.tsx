@@ -37,7 +37,7 @@ export class CalendarView extends ItemView {
   }
 
   getDisplayText() {
-    return 'Chronology';
+    return 'Mycoshiro Chronology';
   }
 
   async openNote(note: TFile, paneType: PaneType | boolean = false) {

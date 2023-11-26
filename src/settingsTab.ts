@@ -14,7 +14,7 @@ export class ChronologySettingTab extends PluginSettingTab {
 
     containerEl.empty();
 
-    containerEl.createEl('h2', { text: 'Chronology Settings' });
+    containerEl.createEl('h2', { text: 'Mycoshiro Chronology Settings' });
 
     new Setting(containerEl)
       .setName('Add Ribbon Icon')
