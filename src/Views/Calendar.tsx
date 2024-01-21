@@ -2,8 +2,8 @@ import { moment } from 'obsidian';
 import * as React from 'react';
 import { useCallback } from 'react';
 import { CalendarItem, CalendarItemType } from '../calendarItem';
-import { TimeIndexContext } from './CalendarView';
 import { myMoment } from '../locale';
+import { TimeIndexContext } from './CalendarView';
 
 export interface CalendarViewProps {
   current: CalendarItem;
@@ -64,7 +64,7 @@ const Cell = ({ value, current, onChange }: CalendarCellProps) => {
       classes.push('chronology-selected');
     }
 
-    const heatLevel = timeIndex.getHeatForDate(itemDate.format('YYYY-MM-DD'));
+    const heatLevel = timeIndex.getHeatForDate(itemDate.format('yyyy-MM-dd'));
     const percentage = Math.max(0, Math.min(Math.ceil(heatLevel * 100), 100));
     const height = `${percentage}%`;
 
